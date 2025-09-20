@@ -253,4 +253,34 @@ footer {
 .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); } 
 .instagram:hover {
   
+  /* Mobil düzenlemeler */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* projeler tek sütun */
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
 
