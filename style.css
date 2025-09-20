@@ -45,7 +45,7 @@ nav {
   padding: 15px 20px;
   flex-wrap: wrap;
   width: 100%;
-  position: fixed;   /* üstte sabit dursun */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -63,8 +63,6 @@ nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li a {
@@ -233,7 +231,7 @@ footer {
   }
 
   .hero {
-    padding-top: 160px; /* mobilde nav daha yüksek */
+    padding-top: 200px; /* mobilde nav daha yüksek */
   }
 
   .hero-content h2 {
