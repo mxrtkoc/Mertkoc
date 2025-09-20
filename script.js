@@ -23,13 +23,13 @@ function createShootingStar() {
 
   starLayer.appendChild(star);
 
-  // 1 saniye sonra DOM'dan temizle
+  
   setTimeout(() => {
     star.remove();
   }, 1000);
 }
 
-//yıldız kayması başlat
+
 setInterval(() => {
   createShootingStar();
 }, 150);
@@ -42,8 +42,8 @@ function createStaticDots(numDots = 50) {
     dot.style.top = Math.random() * 100 + "%";
     dot.style.left = Math.random() * 100 + "%";
 
-    // Rastgele gecikme ver → farklı zamanlarda yanıp sönsünler
-    const delay = Math.random() * 3; // 0 - 3 saniye arası gecikme
+    
+    const delay = Math.random() * 3;
     dot.style.animationDelay = `${delay}s`;
 
     starLayer.appendChild(dot);
@@ -51,5 +51,5 @@ function createStaticDots(numDots = 50) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  createStaticDots(400); // 100 adet küçük beyaz nokta oluştur
+  createStaticDots(400); 
 });
