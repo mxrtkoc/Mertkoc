@@ -252,3 +252,21 @@ footer {
 .github:hover { background: linear-gradient(to right, #1a1a1a, #000); } 
 .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); } 
 .instagram:hover {
+  
+/* --- Mobil düzenlemeler --- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}
